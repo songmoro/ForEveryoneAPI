@@ -12,34 +12,41 @@ struct MainView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                Group {
-                    TextField(text: .constant("")) {
-                        Text("아이디를 입력해주세요.")
-                    }
-                    
-                    TextField(text: .constant("")) {
-                        Text("비밀번호를 입력해주세요.")
-                    }
-                }
-                .font(.title)
-                .padding()
-                
-                Group {
-                    NavigationLink {
-                        UserListView()
-                    } label: {
-                        Text("로그인")
-                    }
-                    
-                    NavigationLink {
-                        RegisterView()
-                    } label: {
-                        Text("회원가입")
-                    }
-                }
-                .padding()
+                InputField
+                AuthButton
             }
         }
+    }
+    
+    var InputField: some View {
+        Group {
+            TextField(text: .constant("")) {
+                Text("아이디를 입력해주세요.")
+            }
+            
+            TextField(text: .constant("")) {
+                Text("비밀번호를 입력해주세요.")
+            }
+        }
+        .font(.title)
+        .padding()
+    }
+    
+    var AuthButton: some View {
+        Group {
+            NavigationLink {
+                UserListView()
+            } label: {
+                Text("로그인")
+            }
+            
+            NavigationLink {
+                RegisterView()
+            } label: {
+                Text("회원가입")
+            }
+        }
+        .padding()
     }
 }
 
