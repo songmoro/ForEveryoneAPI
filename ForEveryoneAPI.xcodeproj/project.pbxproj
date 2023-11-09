@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F8A4BF522AFCE20D00413213 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F8A4BF512AFCE20D00413213 /* Alamofire */; };
+		F8A4BF542AFCE3A200413213 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4BF532AFCE3A200413213 /* Models.swift */; };
 		F8DFEAD82AF921F500BC721B /* ForEveryoneAPIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DFEAD72AF921F500BC721B /* ForEveryoneAPIApp.swift */; };
 		F8DFEADA2AF921F500BC721B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DFEAD92AF921F500BC721B /* ContentView.swift */; };
 		F8DFEADC2AF921F600BC721B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8DFEADB2AF921F600BC721B /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F8A4BF532AFCE3A200413213 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		F8DFEAD42AF921F500BC721B /* ForEveryoneAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForEveryoneAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8DFEAD72AF921F500BC721B /* ForEveryoneAPIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForEveryoneAPIApp.swift; sourceTree = "<group>"; };
 		F8DFEAD92AF921F500BC721B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			children = (
 				F8DFEAD72AF921F500BC721B /* ForEveryoneAPIApp.swift */,
 				F8DFEAD92AF921F500BC721B /* ContentView.swift */,
+				F8A4BF532AFCE3A200413213 /* Models.swift */,
 				F8DFEADB2AF921F600BC721B /* Assets.xcassets */,
 				F8DFEADD2AF921F600BC721B /* Preview Content */,
 			);
@@ -145,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8A4BF542AFCE3A200413213 /* Models.swift in Sources */,
 				F8DFEADA2AF921F500BC721B /* ContentView.swift in Sources */,
 				F8DFEAD82AF921F500BC721B /* ForEveryoneAPIApp.swift in Sources */,
 			);
