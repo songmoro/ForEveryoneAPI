@@ -26,7 +26,7 @@ struct MainView: View {
                 
                 Group {
                     NavigationLink {
-                        
+                        UserListView()
                     } label: {
                         Text("로그인")
                     }
