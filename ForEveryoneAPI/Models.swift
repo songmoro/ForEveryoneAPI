@@ -7,6 +7,24 @@
 
 import SwiftUI
 
+struct Users: Codable {
+    var page: Int
+    var perPage: Int
+    var total: Int
+    var totalPages: Int
+    var data: [UserInfomation]
+    var support: Support
+    
+    enum CodingKeys: String, CodingKey {
+        case page
+        case perPage = "per_page"
+        case total
+        case totalPages = "total_pages"
+        case data
+        case support
+    }
+}
+
 struct User: Codable {
     var data: UserInfomation
     var support: Support
