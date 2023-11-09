@@ -95,3 +95,29 @@ extension API: TargetType {
         }
     }
 }
+
+class NetworkManger {
+    static func request<T>(for target: API, type: T.Type, completion: @escaping ((Result<T, MoyaError>) -> ())) where T: Codable {
+        let provider = MoyaProvider<API>()
+        
+        provider.request(target) { result in
+            switch result {
+            case .success(let response):
+                if (200..<300).contains(response.statusCode) {
+                    if let decodedData = try? JSONDecoder().decode(type, from: response.data) {
+                        completion(.success(decodedData))
+                    }
+                    else {
+                        completion(.failure(.requestMapping("decode error")))
+                    }
+                }
+                else {
+                    completion(.failure(.statusCode(response)))
+                }
+                
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
+}

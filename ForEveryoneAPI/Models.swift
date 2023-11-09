@@ -51,12 +51,14 @@ struct Support: Codable {
     var text: String
 }
 
-struct Person: Codable {
-    var name: String
-    var job: String
+struct ResponseUser: Codable {
+    var name: String?
+    var job: String?
+    var id: String?
+    var createdAt: String?
 }
 
-struct Account: Codable {
-    var email: String
-    var password: String
+struct ResponseAccount: Codable {
+    var token: String?
+    var error: String?
 }
