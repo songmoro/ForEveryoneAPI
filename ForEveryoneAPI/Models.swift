@@ -50,3 +50,13 @@ struct Support: Codable {
     var url: String
     var text: String
 }
+
+struct Person: Codable {
+    var name: String
+    var job: String
+}
+
+struct Account: Codable {
+    var email: String
+    var password: String
+}
