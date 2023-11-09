@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		F8A4BF522AFCE20D00413213 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F8A4BF512AFCE20D00413213 /* Alamofire */; };
 		F8A4BF542AFCE3A200413213 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4BF532AFCE3A200413213 /* Models.swift */; };
+		F8A4BF562AFCE6E100413213 /* NetworkManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4BF552AFCE6E100413213 /* NetworkManger.swift */; };
+		F8A4BF592AFCF24A00413213 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = F8A4BF582AFCF24A00413213 /* CombineMoya */; };
+		F8A4BF5B2AFCF24A00413213 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = F8A4BF5A2AFCF24A00413213 /* Moya */; };
+		F8A4BF5D2AFCF24A00413213 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = F8A4BF5C2AFCF24A00413213 /* ReactiveMoya */; };
+		F8A4BF5F2AFCF24A00413213 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = F8A4BF5E2AFCF24A00413213 /* RxMoya */; };
 		F8DFEAD82AF921F500BC721B /* ForEveryoneAPIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DFEAD72AF921F500BC721B /* ForEveryoneAPIApp.swift */; };
 		F8DFEADA2AF921F500BC721B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DFEAD92AF921F500BC721B /* ContentView.swift */; };
 		F8DFEADC2AF921F600BC721B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8DFEADB2AF921F600BC721B /* Assets.xcassets */; };
@@ -17,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		F8A4BF532AFCE3A200413213 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		F8A4BF552AFCE6E100413213 /* NetworkManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManger.swift; sourceTree = "<group>"; };
 		F8DFEAD42AF921F500BC721B /* ForEveryoneAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForEveryoneAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8DFEAD72AF921F500BC721B /* ForEveryoneAPIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForEveryoneAPIApp.swift; sourceTree = "<group>"; };
 		F8DFEAD92AF921F500BC721B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -29,7 +35,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8A4BF5F2AFCF24A00413213 /* RxMoya in Frameworks */,
+				F8A4BF592AFCF24A00413213 /* CombineMoya in Frameworks */,
+				F8A4BF5D2AFCF24A00413213 /* ReactiveMoya in Frameworks */,
 				F8A4BF522AFCE20D00413213 /* Alamofire in Frameworks */,
+				F8A4BF5B2AFCF24A00413213 /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +68,7 @@
 				F8DFEAD72AF921F500BC721B /* ForEveryoneAPIApp.swift */,
 				F8DFEAD92AF921F500BC721B /* ContentView.swift */,
 				F8A4BF532AFCE3A200413213 /* Models.swift */,
+				F8A4BF552AFCE6E100413213 /* NetworkManger.swift */,
 				F8DFEADB2AF921F600BC721B /* Assets.xcassets */,
 				F8DFEADD2AF921F600BC721B /* Preview Content */,
 			);
@@ -90,6 +101,10 @@
 			name = ForEveryoneAPI;
 			packageProductDependencies = (
 				F8A4BF512AFCE20D00413213 /* Alamofire */,
+				F8A4BF582AFCF24A00413213 /* CombineMoya */,
+				F8A4BF5A2AFCF24A00413213 /* Moya */,
+				F8A4BF5C2AFCF24A00413213 /* ReactiveMoya */,
+				F8A4BF5E2AFCF24A00413213 /* RxMoya */,
 			);
 			productName = ForEveryoneAPI;
 			productReference = F8DFEAD42AF921F500BC721B /* ForEveryoneAPI.app */;
@@ -121,6 +136,7 @@
 			mainGroup = F8DFEACB2AF921F500BC721B;
 			packageReferences = (
 				F8A4BF502AFCE20D00413213 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				F8A4BF572AFCF24A00413213 /* XCRemoteSwiftPackageReference "moya" */,
 			);
 			productRefGroup = F8DFEAD52AF921F500BC721B /* Products */;
 			projectDirPath = "";
@@ -150,6 +166,7 @@
 			files = (
 				F8A4BF542AFCE3A200413213 /* Models.swift in Sources */,
 				F8DFEADA2AF921F500BC721B /* ContentView.swift in Sources */,
+				F8A4BF562AFCE6E100413213 /* NetworkManger.swift in Sources */,
 				F8DFEAD82AF921F500BC721B /* ForEveryoneAPIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,6 +383,14 @@
 				minimumVersion = 5.8.1;
 			};
 		};
+		F8A4BF572AFCF24A00413213 /* XCRemoteSwiftPackageReference "moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "http://github.com/Moya/moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -373,6 +398,26 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F8A4BF502AFCE20D00413213 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		F8A4BF582AFCF24A00413213 /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8A4BF572AFCF24A00413213 /* XCRemoteSwiftPackageReference "moya" */;
+			productName = CombineMoya;
+		};
+		F8A4BF5A2AFCF24A00413213 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8A4BF572AFCF24A00413213 /* XCRemoteSwiftPackageReference "moya" */;
+			productName = Moya;
+		};
+		F8A4BF5C2AFCF24A00413213 /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8A4BF572AFCF24A00413213 /* XCRemoteSwiftPackageReference "moya" */;
+			productName = ReactiveMoya;
+		};
+		F8A4BF5E2AFCF24A00413213 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8A4BF572AFCF24A00413213 /* XCRemoteSwiftPackageReference "moya" */;
+			productName = RxMoya;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
