@@ -32,7 +32,7 @@ struct MainView: View {
                     }
                     
                     NavigationLink {
-                        
+                        RegisterView()
                     } label: {
                         Text("회원가입")
                     }
