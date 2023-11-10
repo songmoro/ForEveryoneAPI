@@ -8,13 +8,25 @@
 import SwiftUI
 
 struct UserListView: View {
+    @State var users = Users(page: 0, perPage: 0, total: 0, totalPages: 0, data: [], support: Support(url: "", text: ""))
     @State var isSearchShow = false
+    
+    func load(page: Int) {
+        NetworkManger.request(for: .GetUserList(page: page), type: Users.self) {
+            _ = $0.map {
+                users = $0
+            }
+        }
+    }
     
     var body: some View {
         VStack {
             UserList
             
             Spacer()
+        }
+        .onAppear {
+            load(page: 1)
         }
         .navigationTitle("유저 목록")
         .toolbar {
@@ -32,11 +44,11 @@ struct UserListView: View {
     }
     
     var UserList: some View {
-        ForEach(0..<5) { _ in
+        ForEach(0..<users.perPage, id: \.self) { idx in
             NavigationLink {
                 DetailedUserView()
             } label: {
-                Text("ID: Moro")
+                Text("Name: \(users.data[idx].firstName) \(users.data[idx].lastName)")
                     .multilineTextAlignment(.leading)
             }
             .font(.title)
@@ -72,21 +84,22 @@ struct UserListView: View {
     var PageButton: some View {
         HStack {
             Button {
-                
+                load(page: 1)
             } label: {
                 Image(systemName: "chevron.left")
                     .foregroundColor(.accentColor)
             }
-            .disabled(true)
+            .disabled(users.page == 1)
             
-            Text("1 페이지")
+            Text("\(users.page) 페이지")
             
             Button {
-                
+                load(page: 2)
             } label: {
                 Image(systemName: "chevron.right")
                     .foregroundColor(.accentColor)
             }
+            .disabled(users.page == 2)
         }
         .font(.title3)
         .padding()
