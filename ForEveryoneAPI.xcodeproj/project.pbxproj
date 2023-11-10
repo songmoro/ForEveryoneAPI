@@ -16,6 +16,7 @@
 		F8A4BF5F2AFCF24A00413213 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = F8A4BF5E2AFCF24A00413213 /* RxMoya */; };
 		F8A4BF612AFD03EA00413213 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4BF602AFD03EA00413213 /* RegisterView.swift */; };
 		F8A4BF632AFD043F00413213 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4BF622AFD043F00413213 /* UserListView.swift */; };
+		F8A4BF652AFD0B2000413213 /* DetailedUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4BF642AFD0B2000413213 /* DetailedUserView.swift */; };
 		F8DFEAD82AF921F500BC721B /* ForEveryoneAPIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DFEAD72AF921F500BC721B /* ForEveryoneAPIApp.swift */; };
 		F8DFEADA2AF921F500BC721B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DFEAD92AF921F500BC721B /* MainView.swift */; };
 		F8DFEADC2AF921F600BC721B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8DFEADB2AF921F600BC721B /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 		F8A4BF552AFCE6E100413213 /* NetworkManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManger.swift; sourceTree = "<group>"; };
 		F8A4BF602AFD03EA00413213 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		F8A4BF622AFD043F00413213 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		F8A4BF642AFD0B2000413213 /* DetailedUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedUserView.swift; sourceTree = "<group>"; };
 		F8DFEAD42AF921F500BC721B /* ForEveryoneAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForEveryoneAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8DFEAD72AF921F500BC721B /* ForEveryoneAPIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForEveryoneAPIApp.swift; sourceTree = "<group>"; };
 		F8DFEAD92AF921F500BC721B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				F8A4BF622AFD043F00413213 /* UserListView.swift */,
 				F8A4BF532AFCE3A200413213 /* Models.swift */,
 				F8A4BF552AFCE6E100413213 /* NetworkManger.swift */,
+				F8A4BF642AFD0B2000413213 /* DetailedUserView.swift */,
 				F8DFEADB2AF921F600BC721B /* Assets.xcassets */,
 				F8DFEADD2AF921F600BC721B /* Preview Content */,
 			);
@@ -176,6 +179,7 @@
 				F8DFEADA2AF921F500BC721B /* MainView.swift in Sources */,
 				F8A4BF562AFCE6E100413213 /* NetworkManger.swift in Sources */,
 				F8DFEAD82AF921F500BC721B /* ForEveryoneAPIApp.swift in Sources */,
+				F8A4BF652AFD0B2000413213 /* DetailedUserView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

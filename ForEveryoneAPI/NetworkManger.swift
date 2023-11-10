@@ -103,7 +103,7 @@ class NetworkManger {
         provider.request(target) { result in
             switch result {
             case .success(let response):
-                if (200..<300).contains(response.statusCode) {
+                if (200..<300).contains(response.statusCode) || response.statusCode == 400 {
                     if let decodedData = try? JSONDecoder().decode(type, from: response.data) {
                         completion(.success(decodedData))
                     }
