@@ -34,7 +34,7 @@ struct UserListView: View {
     var UserList: some View {
         ForEach(0..<5) { _ in
             NavigationLink {
-                
+                DetailedUserView()
             } label: {
                 Text("ID: Moro")
                     .multilineTextAlignment(.leading)
