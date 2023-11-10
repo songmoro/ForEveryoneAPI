@@ -19,7 +19,7 @@ struct MainView: View {
     
     func login() {
         NetworkManger.request(for: .Login(email: email, password: password), type: ResponseAccount.self) {
-            $0.map {
+            _ = $0.map {
                 if $0.token != nil {
                     isCertified = true
                 }
