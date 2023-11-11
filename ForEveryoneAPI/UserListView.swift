@@ -46,7 +46,7 @@ struct UserListView: View {
     var UserList: some View {
         ForEach(0..<users.perPage, id: \.self) { idx in
             NavigationLink {
-                DetailedUserView()
+                DetailedUserView(user: users.data[idx])
             } label: {
                 Text("Name: \(users.data[idx].firstName) \(users.data[idx].lastName)")
                     .multilineTextAlignment(.leading)
