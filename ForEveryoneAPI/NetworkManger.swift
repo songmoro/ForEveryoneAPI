@@ -12,7 +12,7 @@ enum API {
     /// Get 유저 리스트
     case GetUserList(page: Int? = nil, delay: Int? = nil)
     /// Get 싱글 유저
-    case GetSinglleUser(id: String)
+    case GetSingleUser(id: String)
     /// Post 유저
     case CreateUser(name: String, job: String)
     /// Patch 유저
